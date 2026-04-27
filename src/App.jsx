@@ -201,6 +201,7 @@ const diplomaItems = [
   {
     id: 'diploma-6',
     type: 'diploma',
+    featured: true,
     image: '/assets/diploma/clean/WhatsApp Image 2026-04-25 at 20.55.27.jpeg',
     title: { fr: 'Certificat de Reconnaissance (2013)', ar: 'شهادة تقدير (2013)' },
     caption: {
@@ -452,6 +453,7 @@ const translations = {
       kicker: 'Diplomes et certificats',
       title: 'Archive visuelle des references academiques et distinctions',
       note: "Les certificats sont presentes dans leur format complet pour garder chaque document lisible.",
+      featuredLabel: 'Document mis en avant',
     },
     gallery: {
       kicker: 'Peintures',
@@ -585,6 +587,7 @@ const translations = {
       kicker: 'الدبلومات والشهادات',
       title: 'ارشيف بصري للشهادات والدبلومات والتكريمات',
       note: 'تم عرض الوثائق بصيغتها الكاملة حتى تبقى كل شهادة واضحة وقابلة للقراءة.',
+      featuredLabel: 'الوثيقة المميزة',
     },
     gallery: {
       kicker: 'اللوحات',
@@ -626,6 +629,9 @@ function App() {
   const copy = translations[language];
   const featuredDrawing = drawings.find((drawing) => drawing.featured) ?? drawings[0];
   const galleryDrawings = drawings.filter((drawing) => drawing.id !== featuredDrawing.id);
+
+  const featuredDiploma = diplomaItems.find((diploma) => diploma.featured) ?? diplomaItems[0];
+  const galleryDiplomas = diplomaItems.filter((diploma) => diploma.id !== featuredDiploma.id);
 
   useEffect(() => {
     document.documentElement.lang = copy.locale;
@@ -831,8 +837,27 @@ function App() {
             <p className="section-note">{copy.diplomas.note}</p>
           </div>
 
+          <button
+            className="featured-artwork"
+            onClick={() => setSelectedItem(featuredDiploma)}
+            type="button"
+          >
+            <div className="featured-diploma-image">
+              <img
+                src={featuredDiploma.image}
+                alt={getLocalizedText(featuredDiploma.title, language)}
+              />
+            </div>
+
+            <div className="featured-art-copy">
+              <span className="tiny-label">{copy.diplomas.featuredLabel}</span>
+              <h3>{getLocalizedText(featuredDiploma.title, language)}</h3>
+              <p>{getLocalizedText(featuredDiploma.caption, language)}</p>
+            </div>
+          </button>
+
           <div className="diploma-grid">
-            {diplomaItems.map((diploma) => (
+            {galleryDiplomas.map((diploma) => (
               <button
                 className="diploma-card"
                 key={diploma.id}

@@ -668,7 +668,8 @@ img {
 
 .diploma-image,
 .gallery-card-image,
-.featured-art-image {
+.featured-art-image,
+.featured-diploma-image {
   overflow: hidden;
   border-radius: 24px;
   background: #dfe6e1;
@@ -683,12 +684,14 @@ img {
 
 .diploma-image img,
 .gallery-card-image img,
-.featured-art-image img {
+.featured-art-image img,
+.featured-diploma-image img {
   width: 100%;
   height: 100%;
 }
 
-.diploma-image img {
+.diploma-image img,
+.featured-diploma-image img {
   object-fit: contain;
 }
 
@@ -737,8 +740,15 @@ img {
   box-shadow: var(--shadow-soft);
 }
 
-.featured-art-image {
+.featured-art-image,
+.featured-diploma-image {
   min-height: clamp(320px, 42vw, 560px);
+}
+
+.featured-diploma-image {
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: var(--shadow-soft);
 }
 
 .featured-art-copy {
