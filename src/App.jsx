@@ -147,19 +147,198 @@ const drawings = [
   },
 ];
 
-const diplomaItems = diplomaFiles.map((image, index) => ({
-  id: `diploma-${index + 1}`,
-  type: 'diploma',
-  image,
-  title: {
-    fr: `Diplome et certificat ${String(index + 1).padStart(2, '0')}`,
-    ar: `شهادة ودبلوم ${String(index + 1).padStart(2, '0')}`,
+const diplomaItems = [
+  {
+    id: 'diploma-1',
+    type: 'diploma',
+    image: '/assets/diploma/clean/WhatsApp Image 2026-04-25 at 20.41.22.jpeg',
+    title: { fr: "Carte d'adhésion ONDA", ar: 'بطاقة عضوية ONDA' },
+    caption: {
+      fr: 'Membre n 7442 du répertoire national des auteurs et droits voisins.',
+      ar: 'العضوية رقم 7442 في السجل الوطني للمؤلفين والحقوق المجاورة.',
+    },
   },
-  caption: {
-    fr: "Archive des diplomes, certificats et distinctions de l'artiste.",
-    ar: 'ارشيف الدبلومات والشهادات والتكريمات الخاصة بالفنان.',
+  {
+    id: 'diploma-2',
+    type: 'diploma',
+    image: '/assets/diploma/clean/WhatsApp Image 2026-04-25 at 20.41.40.jpeg',
+    title: { fr: 'Traduction officielle ONDA', ar: 'ترجمة رسمية ONDA' },
+    caption: {
+      fr: "Traduction certifiée de l'attestation d'adhésion à l'Office National des Droits d'Auteur.",
+      ar: 'ترجمة معتمدة لشهادة الانخراط في الديوان الوطني لحقوق المؤلف.',
+    },
   },
-}));
+  {
+    id: 'diploma-3',
+    type: 'diploma',
+    image: '/assets/diploma/clean/WhatsApp Image 2026-04-25 at 20.47.30.jpeg',
+    title: { fr: 'Certificat de Reconnaissance (2024)', ar: 'شهادة تقدير (2024)' },
+    caption: {
+      fr: 'Délivré le 07/08/2024 en hommage à son parcours artistique et créatif.',
+      ar: 'سُلمت في 07/08/2024 تكريماً لمساره الفني والإبداعي.',
+    },
+  },
+  {
+    id: 'diploma-4',
+    type: 'diploma',
+    image: '/assets/diploma/clean/WhatsApp Image 2026-04-25 at 20.51.11.jpeg',
+    title: { fr: "Diplôme d'Honneur (Constantine 2012)", ar: 'دبلوم شرفي (قسنطينة 2012)' },
+    caption: {
+      fr: "Délivré à l'occasion du centenaire de l'Hôtel Cirta et de l'exposition des arts plastiques.",
+      ar: 'سُلم بمناسبة مئوية فندق سيرتا ومعرض الفنون التشكيلية.',
+    },
+  },
+  {
+    id: 'diploma-5',
+    type: 'diploma',
+    image: '/assets/diploma/clean/WhatsApp Image 2026-04-25 at 20.53.02.jpeg',
+    title: { fr: 'Certificat de Reconnaissance (2011)', ar: 'شهادة اعتراف (2011)' },
+    caption: {
+      fr: 'Reconnaissance de la Direction de la Culture de Constantine pour sa contribution artistique.',
+      ar: 'اعتراف من مديرية الثقافة لقسنطينة على مساهمته الفنية.',
+    },
+  },
+  {
+    id: 'diploma-6',
+    type: 'diploma',
+    image: '/assets/diploma/clean/WhatsApp Image 2026-04-25 at 20.55.27.jpeg',
+    title: { fr: 'Certificat de Reconnaissance (2013)', ar: 'شهادة تقدير (2013)' },
+    caption: {
+      fr: 'Distinction honorifique de la part du Ministère de la Culture et de la ville de Constantine.',
+      ar: 'تميز شرفي من وزارة الثقافة ومدينة قسنطينة.',
+    },
+  },
+  {
+    id: 'diploma-7',
+    type: 'diploma',
+    image: '/assets/diploma/clean/WhatsApp Image 2026-04-25 at 21.00.18.jpeg',
+    title: { fr: 'Médaille de Reconnaissance (2013)', ar: 'ميدالية اعتراف (2013)' },
+    caption: {
+      fr: "Médaille et certificat de l'Assemblée Populaire de la Wilaya de Constantine.",
+      ar: 'ميدالية وشهادة من المجلس الشعبي الولائي لولاية قسنطينة.',
+    },
+  },
+  {
+    id: 'diploma-8',
+    type: 'diploma',
+    image: '/assets/diploma/clean/WhatsApp Image 2026-04-25 at 21.05.45.jpeg',
+    title: { fr: 'Certificat de Reconnaissance (2012)', ar: 'شهادة اعتراف (2012)' },
+    caption: {
+      fr: 'Délivré par la Daïra de Constantine pour sa participation aux journées du savoir.',
+      ar: 'سُلم من دائرة قسنطينة لمشاركته في يوم العلم.',
+    },
+  },
+  {
+    id: 'diploma-9',
+    type: 'diploma',
+    image: '/assets/diploma/clean/WhatsApp Image 2026-04-25 at 21.07.54.jpeg',
+    title: { fr: 'Premier Prix des Arts (2007)', ar: 'الجائزة الأولى للفنون (2007)' },
+    caption: {
+      fr: 'Prix Ben Badis - Premier prix dans la catégorie Peinture et Sculpture.',
+      ar: 'جائزة بن باديس - الجائزة الأولى في فئة الرسم والنحت.',
+    },
+  },
+  {
+    id: 'diploma-10',
+    type: 'diploma',
+    image: '/assets/diploma/clean/WhatsApp Image 2026-04-25 at 21.10.14.jpeg',
+    title: { fr: 'Certificat Honorifique (Prix Ben Badis 2013)', ar: 'شهادة شرفية (جائزة بن باديس 2013)' },
+    caption: {
+      fr: 'Médaille et certificat décernés lors de la 15ème édition du Prix Ben Badis.',
+      ar: 'ميدالية وشهادة منحت خلال الطبعة الخامسة عشرة لجائزة بن باديس.',
+    },
+  },
+  {
+    id: 'diploma-11',
+    type: 'diploma',
+    image: '/assets/diploma/clean/WhatsApp Image 2026-04-25 at 21.11.32.jpeg',
+    title: { fr: 'Certificat de Reconnaissance (2013)', ar: 'شهادة اعتراف (2013)' },
+    caption: {
+      fr: 'Exposition "Constantine, une ville de couleur" au Palais de la Culture Malek Haddad.',
+      ar: 'معرض "قسنطينة، مدينة الألوان" بقصر الثقافة مالك حداد.',
+    },
+  },
+  {
+    id: 'diploma-12',
+    type: 'diploma',
+    image: '/assets/diploma/clean/WhatsApp Image 2026-04-25 at 21.13.13.jpeg',
+    title: { fr: "Attestation d'Organisation d'Exposition (2011)", ar: 'شهادة تنظيم معرض (2011)' },
+    caption: {
+      fr: "Reconnaissance pour l'organisation d'expositions artistiques en milieu universitaire.",
+      ar: 'شهادة اعتراف بتنظيم معارض فنية في الوسط الجامعي.',
+    },
+  },
+  {
+    id: 'diploma-13',
+    type: 'diploma',
+    image: '/assets/diploma/clean/WhatsApp Image 2026-04-25 at 21.14.36.jpeg',
+    title: { fr: "Certificat d'Honneur (El Khroub 2012)", ar: 'شهادة شرفية (الخروب 2012)' },
+    caption: {
+      fr: "Distinction de l'APC d'El Khroub pour sa contribution au mouvement artistique local.",
+      ar: 'تكريم من بلدية الخروب لمساهمته في الحركة الفنية المحلية.',
+    },
+  },
+  {
+    id: 'diploma-14',
+    type: 'diploma',
+    image: '/assets/diploma/clean/WhatsApp Image 2026-04-25 at 21.15.43.jpeg',
+    title: { fr: 'Attestation de Reconnaissance (2024)', ar: 'شهادة تقدير (2024)' },
+    caption: {
+      fr: 'Maison de la Culture Malek Haddad - Reconnaissance du parcours artistique.',
+      ar: 'دار الثقافة مالك حداد - اعتراف بالمسار الفني.',
+    },
+  },
+  {
+    id: 'diploma-15',
+    type: 'diploma',
+    image: '/assets/diploma/clean/WhatsApp Image 2026-04-25 at 21.17.13.jpeg',
+    title: { fr: "Certificat d'Honneur (Gouraya TV 2025)", ar: 'شهادة شرف (تلفزيون قوراية 2025)' },
+    caption: {
+      fr: "Hommage à l'engagement artistique de Mohamed Cherif Bouanaka.",
+      ar: 'تكريم لالتزام الفنان محمد الشريف بوعناقة الفني.',
+    },
+  },
+  {
+    id: 'diploma-16',
+    type: 'diploma',
+    image: '/assets/diploma/clean/WhatsApp Image 2026-04-26 at 06.22.06.jpeg',
+    title: { fr: "Attestation d'Artiste (Gouraya TV 2025)", ar: 'شهادة فنان (تلفزيون قوراية 2025)' },
+    caption: {
+      fr: "Attestation professionnelle d'artiste plasticien.",
+      ar: 'شهادة مهنية كفنان تشكيلي.',
+    },
+  },
+  {
+    id: 'diploma-17',
+    type: 'diploma',
+    image: '/assets/diploma/clean/WhatsApp Image 2026-04-26 at 06.22.15.jpeg',
+    title: { fr: "Carte d'Artiste Professionnel (2024)", ar: 'بطاقة فنان محترف (2024)' },
+    caption: {
+      fr: "Délivrée par la Société d'Édition et de Distribution Gouraya TV.",
+      ar: 'مسلمة من طرف مؤسسة قوراية للنشر والتوزيع.',
+    },
+  },
+  {
+    id: 'diploma-18',
+    type: 'diploma',
+    image: '/assets/diploma/clean/WhatsApp Image 2026-04-26 at 06.22.22.jpeg',
+    title: { fr: "Carte d'Artiste Professionnel (2025)", ar: 'بطاقة فنان محترف (2025)' },
+    caption: {
+      fr: "Renouvellement de l'accréditation professionnelle d'artiste.",
+      ar: 'تجديد الاعتماد المهني للفنان.',
+    },
+  },
+  {
+    id: 'diploma-19',
+    type: 'diploma',
+    image: '/assets/diploma/clean/WhatsApp Image 2026-04-26 at 17.40.47.jpeg',
+    title: { fr: 'Certificat de Participation (2025)', ar: 'شهادة مشاركة (2025)' },
+    caption: {
+      fr: "Participation au salon de l'Institut Français d'Annaba.",
+      ar: 'مشاركة في صالون المعهد الفرنسي بعنابة.',
+    },
+  },
+];
 
 const translations = {
   fr: {
@@ -438,6 +617,63 @@ function getLocalizedText(field, language) {
   return field[language];
 }
 
+function Slider({ items, renderItem, language }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const isRTL = language === 'ar';
+
+  const next = () => {
+    setCurrentIndex((prev) => (prev + 1) % items.length);
+  };
+
+  const prev = () => {
+    setCurrentIndex((prev) => (prev - 1 + items.length) % items.length);
+  };
+
+  return (
+    <div className="slider-wrapper">
+      <div className="slider-viewport">
+        <div 
+          className="slider-track" 
+          style={{ 
+            transform: `translateX(${isRTL ? currentIndex * 100 : -currentIndex * 100}%)`,
+          }}
+        >
+          {items.map((item) => (
+            <div key={item.id} className="slider-slide">
+              {renderItem(item)}
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="slider-nav">
+        <button className="slider-arrow prev" onClick={prev} aria-label="Previous">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+            <polyline points={isRTL ? "9 18 15 12 9 6" : "15 18 9 12 15 6"} />
+          </svg>
+        </button>
+
+        <div className="slider-dots">
+          {items.map((_, index) => (
+            <button 
+              key={index} 
+              className={`slider-dot ${index === currentIndex ? 'is-active' : ''}`}
+              onClick={() => setCurrentIndex(index)}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
+
+        <button className="slider-arrow next" onClick={next} aria-label="Next">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+            <polyline points={isRTL ? "15 18 9 12 15 6" : "9 18 15 12 9 6"} />
+          </svg>
+        </button>
+      </div>
+    </div>
+  );
+}
+
 function App() {
   const [language, setLanguage] = useState('fr');
   const [selectedItem, setSelectedItem] = useState(null);
@@ -650,11 +886,12 @@ function App() {
             <p className="section-note">{copy.diplomas.note}</p>
           </div>
 
-          <div className="diploma-grid">
-            {diplomaItems.map((diploma) => (
+          <Slider
+            items={diplomaItems}
+            language={language}
+            renderItem={(diploma) => (
               <button
-                className="diploma-card"
-                key={diploma.id}
+                className="diploma-card slider-item"
                 onClick={() => setSelectedItem(diploma)}
                 type="button"
               >
@@ -667,8 +904,8 @@ function App() {
                   <p>{getLocalizedText(diploma.caption, language)}</p>
                 </div>
               </button>
-            ))}
-          </div>
+            )}
+          />
         </section>
 
         <section className="section" id="gallery">
@@ -707,11 +944,12 @@ function App() {
             </div>
           </button>
 
-          <div className="gallery-grid">
-            {galleryDrawings.map((drawing) => (
+          <Slider
+            items={galleryDrawings}
+            language={language}
+            renderItem={(drawing) => (
               <button
-                className={`gallery-card ${drawing.layout === 'portrait' ? 'gallery-card-tall' : ''}`}
-                key={drawing.id}
+                className={`gallery-card slider-item ${drawing.layout === 'portrait' ? 'gallery-card-tall' : ''}`}
                 onClick={() => setSelectedItem(drawing)}
                 type="button"
               >
@@ -730,8 +968,8 @@ function App() {
                   <p>{getLocalizedText(drawing.description, language)}</p>
                 </div>
               </button>
-            ))}
-          </div>
+            )}
+          />
         </section>
 
         <section className="section" id="contact">
