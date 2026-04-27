@@ -617,62 +617,7 @@ function getLocalizedText(field, language) {
   return field[language];
 }
 
-function Slider({ items, renderItem, language }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const isRTL = language === 'ar';
 
-  const next = () => {
-    setCurrentIndex((prev) => (prev + 1) % items.length);
-  };
-
-  const prev = () => {
-    setCurrentIndex((prev) => (prev - 1 + items.length) % items.length);
-  };
-
-  return (
-    <div className="slider-wrapper">
-      <div className="slider-viewport">
-        <div 
-          className="slider-track" 
-          style={{ 
-            transform: `translateX(${isRTL ? currentIndex * 100 : -currentIndex * 100}%)`,
-          }}
-        >
-          {items.map((item) => (
-            <div key={item.id} className="slider-slide">
-              {renderItem(item)}
-            </div>
-          ))}
-        </div>
-      </div>
-      
-      <div className="slider-nav">
-        <button className="slider-arrow prev" onClick={prev} aria-label="Previous">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-            <polyline points={isRTL ? "9 18 15 12 9 6" : "15 18 9 12 15 6"} />
-          </svg>
-        </button>
-
-        <div className="slider-dots">
-          {items.map((_, index) => (
-            <button 
-              key={index} 
-              className={`slider-dot ${index === currentIndex ? 'is-active' : ''}`}
-              onClick={() => setCurrentIndex(index)}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
-        </div>
-
-        <button className="slider-arrow next" onClick={next} aria-label="Next">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-            <polyline points={isRTL ? "15 18 9 12 15 6" : "9 18 15 12 9 6"} />
-          </svg>
-        </button>
-      </div>
-    </div>
-  );
-}
 
 function App() {
   const [language, setLanguage] = useState('fr');
@@ -886,12 +831,11 @@ function App() {
             <p className="section-note">{copy.diplomas.note}</p>
           </div>
 
-          <Slider
-            items={diplomaItems}
-            language={language}
-            renderItem={(diploma) => (
+          <div className="diploma-grid">
+            {diplomaItems.map((diploma) => (
               <button
-                className="diploma-card slider-item"
+                className="diploma-card"
+                key={diploma.id}
                 onClick={() => setSelectedItem(diploma)}
                 type="button"
               >
@@ -904,8 +848,8 @@ function App() {
                   <p>{getLocalizedText(diploma.caption, language)}</p>
                 </div>
               </button>
-            )}
-          />
+            ))}
+          </div>
         </section>
 
         <section className="section" id="gallery">
@@ -944,12 +888,11 @@ function App() {
             </div>
           </button>
 
-          <Slider
-            items={galleryDrawings}
-            language={language}
-            renderItem={(drawing) => (
+          <div className="gallery-grid">
+            {galleryDrawings.map((drawing) => (
               <button
-                className={`gallery-card slider-item ${drawing.layout === 'portrait' ? 'gallery-card-tall' : ''}`}
+                className={`gallery-card ${drawing.layout === 'portrait' ? 'gallery-card-tall' : ''}`}
+                key={drawing.id}
                 onClick={() => setSelectedItem(drawing)}
                 type="button"
               >
@@ -968,8 +911,8 @@ function App() {
                   <p>{getLocalizedText(drawing.description, language)}</p>
                 </div>
               </button>
-            )}
-          />
+            ))}
+          </div>
         </section>
 
         <section className="section" id="contact">
