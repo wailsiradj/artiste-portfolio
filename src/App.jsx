@@ -407,7 +407,7 @@ const translations = {
       contactTitle: 'Coordonnees',
       contact: [
         'Telephone : +213 6 57 47 43 97',
-        'Email : bouanakamohamedcherif12@gmail.com',
+        'Email : bouanakamohamedcherif12\n@gmail.com',
       ],
       statementTitle: 'Demarche artistique',
       statementText:
