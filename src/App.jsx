@@ -209,10 +209,10 @@ const diplomaItems = [
     id: 'diploma-3',
     type: 'diploma',
     image: '/assets/diploma/clean/WhatsApp Image 2026-04-25 at 20.47.30.jpeg',
-    title: { fr: 'Certificat de Reconnaissance (2024)', ar: 'شهادة تقدير (2024)' },
+    title: { fr: 'Certificat de Reconnaissance (2014)', ar: 'شهادة تقدير (2014)' },
     caption: {
-      fr: 'Délivré le 07/08/2024 en hommage à son parcours artistique et créatif.',
-      ar: 'سُلمت في 07/08/2024 تكريماً لمساره الفني والإبداعي.',
+      fr: 'Délivré le 07/08/2014 en hommage à son parcours artistique et créatif.',
+      ar: 'سُلمت في 07/08/2014 تكريماً لمساره الفني والإبداعي.',
     },
   },
   {
@@ -260,7 +260,7 @@ const diplomaItems = [
     id: 'diploma-8',
     type: 'diploma',
     image: '/assets/diploma/clean/WhatsApp Image 2026-04-25 at 21.05.45.jpeg',
-    title: { fr: 'Certificat de Reconnaissance (2012)', ar: 'شهادة اعتراف (2012)' },
+    title: { fr: 'Certificat de Reconnaissance (2011)', ar: 'شهادة اعتراف (2011)' },
     caption: {
       fr: 'Délivré par la Daïra de Constantine pour sa participation aux journées du savoir.',
       ar: 'سُلم من دائرة قسنطينة لمشاركته في يوم العلم.',
@@ -320,7 +320,7 @@ const diplomaItems = [
     id: 'diploma-14',
     type: 'diploma',
     image: '/assets/diploma/clean/WhatsApp Image 2026-04-25 at 21.15.43.jpeg',
-    title: { fr: 'Attestation de Reconnaissance (2014)', ar: 'شهادة تقدير (2014)' },
+    title: { fr: 'Attestation de Reconnaissance (2024)', ar: 'شهادة تقدير (2024)' },
     caption: {
       fr: 'Maison de la Culture Malek Haddad - Reconnaissance du parcours artistique.',
       ar: 'دار الثقافة مالك حداد - اعتراف بالمسار الفني.',
