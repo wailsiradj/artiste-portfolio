@@ -169,6 +169,19 @@ const drawings = [
       ar: 'بورتريه فتاة شابة في فضاء خارجي طبيعي.',
     },
   },
+  {
+    id: 'painting-13',
+    type: 'painting',
+    image: '/assets/painting/clean/13.jpeg',
+    title: { fr: 'Lutte contre les dragons ()', ar: ' () مصارعة التنين' },
+    dimensions: { fr: '60 x 30 cm', ar: '60 × 30 سم' },
+    medium: { fr: 'Huile sur toile', ar: 'زيت على قماش' },
+    description: {
+      fr: 'Lutte contre les dragons.',
+      ar: 'مصارعة التنين',
+    },
+  },
+
 ];
 
 const diplomaItems = [
