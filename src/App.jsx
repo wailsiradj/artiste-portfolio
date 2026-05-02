@@ -203,7 +203,7 @@ const diplomaItems = [
     type: 'diploma',
     featured: true,
     image: '/assets/diploma/clean/WhatsApp Image 2026-04-25 at 20.55.27.jpeg',
-    title: { fr: 'Certificat de Reconnaissance (2013)', ar: 'شهادة تقدير (2013)' },
+    title: { fr: 'Certificat de Reconnaissance (2015)', ar: 'شهادة تقدير (2015)' },
     caption: {
       fr: 'Distinction honorifique de la part du Ministère de la Culture et de la ville de Constantine.',
       ar: 'تميز شرفي من وزارة الثقافة ومدينة قسنطينة.',
@@ -213,7 +213,7 @@ const diplomaItems = [
     id: 'diploma-7',
     type: 'diploma',
     image: '/assets/diploma/clean/WhatsApp Image 2026-04-25 at 21.00.18.jpeg',
-    title: { fr: 'Médaille de Reconnaissance (2013)', ar: 'ميدالية اعتراف (2013)' },
+    title: { fr: 'Médaille de Reconnaissance (2018)', ar: 'ميدالية اعتراف (2018)' },
     caption: {
       fr: "Médaille et certificat de l'Assemblée Populaire de la Wilaya de Constantine.",
       ar: 'ميدالية وشهادة من المجلس الشعبي الولائي لولاية قسنطينة.',
@@ -253,7 +253,7 @@ const diplomaItems = [
     id: 'diploma-11',
     type: 'diploma',
     image: '/assets/diploma/clean/WhatsApp Image 2026-04-25 at 21.11.32.jpeg',
-    title: { fr: 'Certificat de Reconnaissance (2013)', ar: 'شهادة اعتراف (2013)' },
+    title: { fr: 'Certificat de Reconnaissance (2017)', ar: 'شهادة اعتراف (2017)' },
     caption: {
       fr: 'Exposition "Constantine, une ville de couleur" au Palais de la Culture Malek Haddad.',
       ar: 'معرض "قسنطينة، مدينة الألوان" بقصر الثقافة مالك حداد.',
@@ -265,8 +265,8 @@ const diplomaItems = [
     image: '/assets/diploma/clean/WhatsApp Image 2026-04-25 at 21.13.13.jpeg',
     title: { fr: "Attestation d'Organisation d'Exposition (2011)", ar: 'شهادة تنظيم معرض (2011)' },
     caption: {
-      fr: "Reconnaissance pour l'organisation d'expositions artistiques en milieu universitaire.",
-      ar: 'شهادة اعتراف بتنظيم معارض فنية في الوسط الجامعي.',
+      fr: "Organisateur de deux expositions officielles à l'université émir Abdelkader 2010-2011",
+      ar: 'منظم معرضين رسميين في جامعة الأمير عبد القادر 2010-2011',
     },
   },
   {
@@ -283,7 +283,7 @@ const diplomaItems = [
     id: 'diploma-14',
     type: 'diploma',
     image: '/assets/diploma/clean/WhatsApp Image 2026-04-25 at 21.15.43.jpeg',
-    title: { fr: 'Attestation de Reconnaissance (2024)', ar: 'شهادة تقدير (2024)' },
+    title: { fr: 'Attestation de Reconnaissance (2014)', ar: 'شهادة تقدير (2014)' },
     caption: {
       fr: 'Maison de la Culture Malek Haddad - Reconnaissance du parcours artistique.',
       ar: 'دار الثقافة مالك حداد - اعتراف بالمسار الفني.',
@@ -313,7 +313,7 @@ const diplomaItems = [
     id: 'diploma-17',
     type: 'diploma',
     image: '/assets/diploma/clean/WhatsApp Image 2026-04-26 at 06.22.15.jpeg',
-    title: { fr: "Carte d'Artiste Professionnel (2024)", ar: 'بطاقة فنان محترف (2024)' },
+    title: { fr: "Carte d'Artiste Professionnel (2025)", ar: 'بطاقة فنان محترف (2025)' },
     caption: {
       fr: "Délivrée par la Société d'Édition et de Distribution Gouraya TV.",
       ar: 'مسلمة من طرف مؤسسة قوراية للنشر والتوزيع.',
