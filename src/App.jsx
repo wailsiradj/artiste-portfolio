@@ -28,7 +28,7 @@ const drawings = [
     type: 'painting',
     featured: true,
     image: '/assets/painting/clean/1.jpeg',
-    title: { fr: "L'ancienne Cirta", ar: 'سيرتا القديمة' },
+    title: { fr: "L'ancienne Cirta (2004) ", ar: '(2004)سيرتا القديمة' },
     dimensions: { fr: '1,40 m x 1 m', ar: '1.40 م × 1 م' },
     medium: { fr: 'Huile sur toile', ar: 'زيت على قماش' },
     description: {
@@ -40,7 +40,7 @@ const drawings = [
     id: 'painting-2',
     type: 'painting',
     image: '/assets/painting/clean/2.jpeg',
-    title: { fr: "Constantine l'antique", ar: 'قسنطينة العتيقة' },
+    title: { fr: "Constantine l'antique (2012)", ar: '(2012) قسنطينة العتيقة' },
     dimensions: { fr: '1,20 m x 1 m', ar: '1.20 م × 1 م' },
     medium: { fr: 'Huile sur toile', ar: 'زيت على قماش' },
     description: {
@@ -52,7 +52,7 @@ const drawings = [
     id: 'painting-3',
     type: 'painting',
     image: '/assets/painting/clean/3.jpeg',
-    title: { fr: "L'ancienne Souika", ar: 'السويقة القديمة' },
+    title: { fr: "L'ancienne Souika (2011)", ar: '(2011) السويقة القديمة' },
     dimensions: { fr: '80 x 100 cm', ar: '80 × 100 سم' },
     medium: { fr: 'Huile sur toile', ar: 'زيت على قماش' },
     description: {
@@ -64,7 +64,7 @@ const drawings = [
     id: 'painting-4',
     type: 'painting',
     image: '/assets/painting/clean/4.jpeg',
-    title: { fr: 'Le vieux rocher', ar: 'الصخرة القديمة' },
+    title: { fr: 'Le vieux rocher (2015)', ar: '(2015) الصخرة القديمة' },
     dimensions: { fr: '1 m x 80 cm', ar: '1 م × 80 سم' },
     medium: { fr: 'Huile sur toile', ar: 'زيت على قماش' },
     description: {
@@ -77,7 +77,7 @@ const drawings = [
     type: 'painting',
     image: '/assets/painting/clean/5.jpeg',
     layout: 'portrait',
-    title: { fr: "Le pont Sidi M'Cid et le rocher antique", ar: 'جسر سيدي مسيد والصخرة العتيقة' },
+    title: { fr: "Le pont Sidi M'Cid et le rocher antique (2012)", ar: '(2012) جسر سيدي مسيد والصخرة العتيقة' },
     dimensions: { fr: '1,50 m x 1 m', ar: '1.50 م × 1 م' },
     medium: { fr: 'Pointillisme sur toile', ar: 'تنقيط على قماش' },
     description: {
@@ -89,7 +89,7 @@ const drawings = [
     id: 'painting-6',
     type: 'painting',
     image: '/assets/painting/clean/6.jpeg',
-    title: { fr: "Le pont de Sidi M'Cid", ar: 'جسر سيدي مسيد' },
+    title: { fr: "Le pont de Sidi M'Cid (2014)", ar: '(2014) جسر سيدي مسيد' },
     dimensions: { fr: '200 x 120 cm', ar: '200 × 120 سم' },
     medium: { fr: 'Huile sur toile', ar: 'زيت على قماش' },
     description: {
@@ -101,7 +101,7 @@ const drawings = [
     id: 'painting-7',
     type: 'painting',
     image: '/assets/painting/clean/7.jpeg',
-    title: { fr: 'Vue generale du Rocher et de Bab El-Kantra', ar: 'منظر عام للصخرة وباب القنطرة' },
+    title: { fr: 'Vue generale du Rocher et de Bab El-Kantra ( 2009 )', ar: ' ( 2009 )منظر عام للصخرة وباب القنطرة' },
     dimensions: { fr: '2 m x 1,70 m', ar: '2 م × 1.70 م' },
     medium: { fr: "Pointillisme a l'huile sur toile", ar: 'تنقيط زيتي على قماش' },
     description: {
@@ -113,7 +113,7 @@ const drawings = [
     id: 'painting-8',
     type: 'painting',
     image: '/assets/painting/clean/8.jpeg',
-    title: { fr: 'Vieux rocher', ar: 'الصخرة القديمة' },
+    title: { fr: 'Vieux rocher (2012)', ar: '(2012) الصخرة القديمة' },
     dimensions: { fr: '1 m x 80 cm', ar: '1 م × 80 سم' },
     medium: { fr: 'Huile sur toile', ar: 'زيت على قماش' },
     description: {
@@ -125,7 +125,7 @@ const drawings = [
     id: 'painting-9',
     type: 'painting',
     image: '/assets/painting/clean/9.jpeg',
-    title: { fr: 'Paysage imaginaire I', ar: 'منظر طبيعي خيالي 1' },
+    title: { fr: 'Paysage imaginaire I (2013)', ar: '(2013) منظر طبيعي خيالي 1' },
     dimensions: { fr: '150 x 100 cm', ar: '150 × 100 سم' },
     medium: { fr: 'Huile sur toile', ar: 'زيت على قماش' },
     description: {
@@ -137,12 +137,36 @@ const drawings = [
     id: 'painting-10',
     type: 'painting',
     image: '/assets/painting/clean/10.jpeg',
-    title: { fr: 'Paysage imaginaire II', ar: 'منظر طبيعي خيالي 2' },
+    title: { fr: 'Paysage imaginaire II (2013)', ar: '(2013) منظر طبيعي خيالي 2' },
     dimensions: { fr: '150 x 100 cm', ar: '150 × 100 سم' },
     medium: { fr: 'Huile sur toile', ar: 'زيت على قماش' },
     description: {
       fr: 'Variation imaginaire autour de la couleur, du rythme et de lespace pictural.',
       ar: 'تنويع خيالي يشتغل على اللون والإيقاع والفضاء التشكيلي.',
+    },
+  },
+  {
+    id: 'painting-11',
+    type: 'painting',
+    image: '/assets/painting/clean/11.jpeg',
+    title: { fr: 'Paysage imaginaire III (2011)', ar: '(2011) منظر طبيعي خيالي 3' },
+    dimensions: { fr: '1.50 x 2 m', ar: '1.50 × 2 س' },
+    medium: { fr: 'Huile sur toile', ar: 'زيت على قماش' },
+    description: {
+      fr: 'Variation imaginaire autour de la couleur, du rythme et de lespace pictural.',
+      ar: 'تنويع خيالي يشتغل على اللون والإيقاع والفضاء التشكيلي.',
+    },
+  },
+  {
+    id: 'painting-12',
+    type: 'painting',
+    image: '/assets/painting/clean/12.jpeg',
+    title: { fr: 'Jihan dans le jardin (2010)', ar: ' (2010) جيهان في الحديقة ' },
+    dimensions: { fr: '1.20 x 1 m', ar: '1.20 × 1 م' },
+    medium: { fr: 'Huile sur toile', ar: 'زيت على قماش' },
+    description: {
+      fr: 'Portrait d\'une jeune fille en plein air.',
+      ar: 'بورتريه فتاة شابة في فضاء خارجي طبيعي.',
     },
   },
 ];
